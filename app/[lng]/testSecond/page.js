@@ -5,7 +5,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
-  const { t } = await i18next(params.lng, ['extra'])
+  const { t } = await i18next(params.lng, ['translation', 'extra'])
   return (
     <>
       <h1>{t('welcome2')}</h1>

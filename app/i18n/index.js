@@ -7,7 +7,7 @@ export const languages = [fallbackLng, 'de', 'it']
 export const defaultNS = 'translation'
 
 const initI18next = async (lng, ns) => {
-  if (ns && ns.indexOf(defaultNS) < 0) ns.push(defaultNS)
+  // if (ns && ns.indexOf(defaultNS) < 0) ns.push(defaultNS)
   const i18nInstance = i18next.createInstance()
   await i18nInstance
     .use(initReactI18next)
@@ -19,7 +19,7 @@ const initI18next = async (lng, ns) => {
     .init({
       debug: true,
       supportedLngs: languages,
-      preload: languages,
+      // preload: languages,
       fallbackLng,
       lng,
       fallbackNS: defaultNS,
