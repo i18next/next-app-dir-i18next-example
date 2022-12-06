@@ -2,5 +2,6 @@
   "goToPage1": "gehe zur Test Seite",
   "goToPage2": "gehe zur zweiten Test Seite",
   "welcome": "Willkommen zu Next.js v13 appDir und i18next",
-  "welcome2": "Willkommen zu Next.js v13 appDir und i18next (zweite Seite)"
+  "welcome2": "Willkommen zu Next.js v13 appDir und i18next (zweite Seite)",
+  "languageSwitcher": "Wechseln von <1>{{lng}}</1> nach: "
 }

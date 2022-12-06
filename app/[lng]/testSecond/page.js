@@ -1,14 +1,15 @@
-import i18n, { languages } from '../../i18n'
+import i18next, { languages } from '../../i18n'
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
 export default async function Page({ params }) {
-  const i18next = await i18n(params.lng)
+  const { t } = await i18next(params.lng, ['extra'])
   return (
     <>
-      <h1>{i18next.t('welcome2')}</h1>
+      <h1>{t('welcome2')}</h1>
+      <h2>{t('addition', { ns: 'extra' })}</h2>
     </>
   );
 }
