@@ -3,7 +3,7 @@ import resourcesToBackend from 'i18next-resources-to-backend'
 
 export const languages = ['en', 'de', 'it']
 
-export default async function init (lng) {
+export default async function init (lng, ns = 'translation') {
   if (i18next.isInitialized) {
     if (lng !== i18next.resolvedLanguage) i18next.changeLanguage(lng)
     return i18next
@@ -16,7 +16,10 @@ export default async function init (lng) {
     debug: true,
     supportedLngs: languages,
     fallbackLng: 'en',
-    lng
+    lng,
+    fallbackNS: 'translation',
+    defaultNS: 'translation',
+    ns
   })
   return i18next
 }
