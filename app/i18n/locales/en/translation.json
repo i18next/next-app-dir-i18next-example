@@ -1,0 +1,6 @@
+{
+  "goToPage1": "go to test page",
+  "goToPage2": "go to second test page",
+  "welcome": "Welcome to Next.js v13 appDir and i18next",
+  "welcome2": "Welcome to Next.js v13 appDir and i18next (SECOND page)"
+}
