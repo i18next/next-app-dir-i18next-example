@@ -5,10 +5,6 @@ import i18next from '../i18n'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
-}
-
 export default async function Page({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
   const { t, i18n } = await i18next(lng)
