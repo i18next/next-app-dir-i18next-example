@@ -23,12 +23,8 @@ export default function Page({ params: { lng } }) {
         />
         <p>{t('counter', { count: counter })}</p>
         <div>
-          <button onClick={() => setCounter(Math.max(0, counter - 1))}>
-            decrement
-          </button>
-          <button onClick={() => setCounter(Math.min(10, counter + 1))}>
-            increment
-          </button>
+          <button onClick={() => setCounter(Math.max(0, counter - 1))}>-</button>
+          <button onClick={() => setCounter(Math.min(10, counter + 1))}>+</button>
         </div>
         <Link href={`/${lng}/second-client-page`}>
           {t('to-second-client-page')}
@@ -39,7 +35,7 @@ export default function Page({ params: { lng } }) {
           </button>
         </Link>
       </main>
-      <Footer lng={lng}/>
+      <Footer lng={lng} path="/client-page" />
     </>
   );
 }

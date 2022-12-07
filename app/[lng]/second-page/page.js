@@ -23,7 +23,7 @@ export default async function Page({ params: { lng } }) {
           </button>
         </Link>
       </main>
-      <Footer lng={lng}/>
+      <Footer lng={lng} path="/second-page" />
     </>
   );
 }
