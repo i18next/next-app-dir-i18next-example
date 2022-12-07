@@ -1,7 +1,18 @@
 {
-  "goToPage1": "gehe zur Test Seite",
-  "goToPage2": "gehe zur zweiten Test Seite",
-  "welcome": "Willkommen zu Next.js v13 appDir und i18next",
-  "welcome2": "Willkommen zu Next.js v13 appDir und i18next (zweite Seite)",
-  "languageSwitcher": "Wechseln von <1>{{lng}}</1> nach: "
+  "h1": "Ein einfaches Beispiel",
+  "to-second-page": "Zur zweiten Seite",
+  "title": "Hauptseite",
+  "welcome": "Willkommen zu Next.js v13 <1>appDir</1> und i18next",
+  "blog": {
+    "optimized": {
+      "question": "Möchtest du einige Superkräfte entfesseln, um für alle Seiten optimierte Übersetzungen zu haben?",
+      "answer": "Dann schaue dir vielleicht <1>diesen Blogbeitrag</1> an.",
+      "link": "https://locize.com/blog/next-i18next-de/"
+    },
+    "ssg": {
+      "question": "Möchtest du SSG (next export) verwenden?",
+      "answer": "Dann schaue dir vielleicht <1>diesen Blogbeitrag</1> an.",
+      "link": "https://locize.com/blog/next-i18n-statisch/"
+    }
+  }
 }

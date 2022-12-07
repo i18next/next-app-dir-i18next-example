@@ -1,4 +1,6 @@
-import { dir } from 'i18next'
+import './global.css';
+
+import { dir } from 'i18next';
 
 export default async function RootLayout({
   children,

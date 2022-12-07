@@ -28,7 +28,7 @@ const initI18next = async (lng, ns) => {
 export default async function init (lng = fallbackLng, ns = defaultNS, keyPrefix) {
   const i18nextInstance = await initI18next(lng, ns)
   return {
-    t: i18nextInstance.getFixedT(lng, ns, keyPrefix),
+    t: i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns, keyPrefix),
     i18n: i18nextInstance
   }
 }
