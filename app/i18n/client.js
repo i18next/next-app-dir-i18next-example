@@ -5,6 +5,7 @@ import { initReactI18next, useTranslation as useTranslationOrg } from 'react-i18
 import resourcesToBackend from 'i18next-resources-to-backend'
 import { getOptions } from './settings'
 
+// on client side the normal singleton is ok
 i18next
   .use(initReactI18next)
   .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
