@@ -6,15 +6,6 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/en',
-        permanent: true,
-      },
-    ]
-  },
 };
 
 module.exports = nextConfig;
