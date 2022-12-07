@@ -1,4 +1,3 @@
-import { use } from 'react'
 import Link from 'next/link'
 import i18next, { languages } from '../../i18n'
 import { Header } from '../components/Header'
@@ -8,8 +7,8 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default function Page({ params: { lng } }) {
-  const { t } = use(i18next(lng, 'second-page'))
+export default async function Page({ params: { lng } }) {
+  const { t } = await i18next(lng, 'second-page')
   return (
     <>
       <main>

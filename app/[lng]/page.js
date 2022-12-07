@@ -1,4 +1,3 @@
-import { use } from 'react'
 import Link from 'next/link'
 import { Trans } from 'react-i18next/TransWithoutContext'
 import i18next, { languages, fallbackLng } from '../i18n'
@@ -9,9 +8,9 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default function Page({ params: { lng } }) {
+export default async function Page({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
-  const { t, i18n } = use(i18next(lng))
+  const { t, i18n } = await i18next(lng)
 
   return (
     <>

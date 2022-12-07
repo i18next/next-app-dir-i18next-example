@@ -1,8 +1,7 @@
-import { use } from 'react'
 import i18next from '../../i18n'
 
-export default function Head({ params: { lng } }) {
-  const { t } = use(i18next(lng, 'second-page'))
+export default async function Head({ params: { lng } }) {
+  const { t } = await i18next(lng, 'second-page')
 
   return (
     <>

@@ -1,9 +1,8 @@
-import { use } from 'react'
 import i18next, { languages, fallbackLng } from '../i18n'
 
-export default function Head({ params: { lng } }) {
+export default async function Head({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
-  const { t } = use(i18next(lng))
+  const { t } = await i18next(lng)
 
   return (
     <>
