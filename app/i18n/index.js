@@ -13,7 +13,7 @@ const initI18next = async (lng, ns) => {
     .use(initReactI18next)
     .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
     .init({
-      debug: true,
+      // debug: true,
       supportedLngs: languages,
       // preload: languages,
       fallbackLng,
