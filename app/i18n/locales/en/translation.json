@@ -2,6 +2,10 @@
   "goToPage1": "go to test page",
   "goToPage2": "go to second test page",
   "welcome": "Welcome to Next.js v13 appDir and i18next",
+  "counter_zero": "none selected",
+  "counter_one": "one selected",
+  "counter_two": "two selected",
+  "counter_other": "{{count}} selected",
   "welcome2": "Welcome to Next.js v13 appDir and i18next (SECOND page)",
   "languageSwitcher": "Switch from <1>{{lng}}</1> to: "
 }
