@@ -1,0 +1,9 @@
+{
+  "h1": "Una pagina client, per dimostrare il i18n nel client",
+  "back-to-home": "Tornare alla pagina principale",
+  "title": "Pagina client",
+  "to-second-client-page": "alla seconda pagina client",
+  "counter_zero": "nessuno selezionato",
+  "counter_one": "uno selezionato",
+  "counter_other": "{{count}} selezionati"
+}

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Trans } from 'react-i18next/TransWithoutContext'
-import i18next, { languages, fallbackLng } from '../i18n'
+import { languages, fallbackLng } from '../i18n/settings'
+import i18next from '../i18n'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 
@@ -62,6 +63,9 @@ export default async function Page({ params: { lng } }) {
         <div>
           <Link href={`/${lng}/second-page`}>
             <button type="button">{t('to-second-page')}</button>
+          </Link>
+          <Link href={`/${lng}/client-page`}>
+            <button type="button">{t('to-client-page')}</button>
           </Link>
         </div>
       </main>

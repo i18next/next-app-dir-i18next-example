@@ -1,15 +1,17 @@
+'use client'
+
 import Link from 'next/link'
 import { languages } from '../../i18n/settings'
-import i18next from '../../i18n'
+import { useTranslation } from '../../i18n/client'
 import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
+import { Footer } from '../components/Footer/client'
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default async function Page({ params: { lng } }) {
-  const { t } = await i18next(lng, 'second-page')
+export default function Page({ params: { lng } }) {
+  const { t } = useTranslation(lng, 'second-client-page')
   return (
     <>
       <main>

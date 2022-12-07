@@ -1,6 +1,7 @@
 {
   "h1": "Un semplice esempio",
   "to-second-page": "Alla seconda pagina",
+  "to-client-page": "Alla pagina client",
   "title": "Casa",
   "welcome": "Benvenuti a Next.js v13 <1>appDir</1> con i18next",
   "blog": {
