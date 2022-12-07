@@ -1,4 +1,4 @@
-import i18next from 'i18next'
+import { createInstance } from 'i18next'
 import resourcesToBackend from 'i18next-resources-to-backend'
 import { initReactI18next } from 'react-i18next/initReactI18next'
 
@@ -8,7 +8,7 @@ export const defaultNS = 'translation'
 
 const initI18next = async (lng, ns) => {
   // if (ns && ns.indexOf(defaultNS) < 0) ns.push(defaultNS)
-  const i18nInstance = i18next.createInstance()
+  const i18nInstance = createInstance()
   await i18nInstance
     .use(initReactI18next)
     .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))

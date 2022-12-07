@@ -1,3 +1,5 @@
+import { dir } from 'i18next'
+
 export default async function RootLayout({
   children,
 }) {
@@ -9,7 +11,7 @@ export default async function RootLayout({
   const lang = 'en';
 
   return (
-    <html lang={lang}>
+    <html lang={lang} dir={dir(lang)}>
       <head />
       <body>
         {children}

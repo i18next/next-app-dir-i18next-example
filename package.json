@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "i18next": "22.1.0",
+    "i18next": "22.1.4",
     "i18next-resources-to-backend": "1.1.0",
     "next": "13.0.6",
     "react": "18.2.0",
