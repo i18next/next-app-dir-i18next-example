@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params: {
     lng
