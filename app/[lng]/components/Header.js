@@ -1,7 +1,7 @@
 export const Header = ({ heading }) => (
   <>
     <h2>
-      Next.js v13 (appDir) - i18next
+      Next.js 13 <small>(app directory)</small> - i18next
       <hr />
     </h2>
     <h1>{heading}</h1>

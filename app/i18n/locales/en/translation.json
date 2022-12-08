@@ -3,7 +3,7 @@
   "to-second-page": "To second page",
   "to-client-page": "To client page",
   "title": "Home",
-  "welcome": "Welcome to Next.js v13 <1>appDir</1> and i18next",
+  "welcome": "Welcome to Next.js 13 <1>with the new app directory features</1> and i18next",
   "blog": {
     "optimized": {
       "question": "Do you like to unleash some super powers to have all side optimized translations?",
