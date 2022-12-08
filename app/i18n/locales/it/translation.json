@@ -3,17 +3,5 @@
   "to-second-page": "Alla seconda pagina",
   "to-client-page": "Alla pagina client",
   "title": "Casa",
-  "welcome": "Benvenuti a Next.js 13 <1>con le nuove funzionalità di app directory</1> e i18next",
-  "blog": {
-    "optimized": {
-      "question": "Ti piace scatenare alcuni super poteri per avere tutte le traduzioni ottimizzate?",
-      "answer": "Allora potresti dare un'occhiata a <1>questo articolo del blog</1>.",
-      "link": "https://locize.com/blog/next-i18next/"
-    },
-    "ssg": {
-      "question": "Vuoi utilizzare SSG (prossima esportazione)?",
-      "answer": "Allora potresti dare un'occhiata a <1>questo articolo del blog</1>.",
-      "link": "https://locize.com/blog/next-i18n-static/"
-    }
-  }
+  "welcome": "Benvenuti a Next.js 13 <1>con le nuove funzionalità di app directory</1> e i18next"
 }
