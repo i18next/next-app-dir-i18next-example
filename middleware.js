@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import acceptLanguage from 'accept-language'
 import { fallbackLng, languages } from './app/i18n/settings'
 
