@@ -7,7 +7,7 @@ import { Footer } from './components/Footer'
 
 export default async function Page({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
-  const { t, i18n } = await useTranslation(lng)
+  const { t } = await useTranslation(lng)
 
   return (
     <>
