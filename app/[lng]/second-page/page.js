@@ -20,5 +20,5 @@ export default async function Page({ params: { lng } }) {
       </main>
       <Footer lng={lng} path="/second-page" />
     </>
-  );
+  )
 }

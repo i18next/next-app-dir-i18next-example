@@ -1,6 +1,6 @@
-import './global.css';
+import './global.css'
 
-import { dir } from 'i18next';
+import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 
 export async function generateStaticParams() {
@@ -10,8 +10,8 @@ export async function generateStaticParams() {
 export default async function RootLayout({
   children,
   params: {
-    lng,
-  },
+    lng
+  }
 }) {
   return (
     <html lang={lng} dir={dir(lng)}>
@@ -20,5 +20,5 @@ export default async function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
