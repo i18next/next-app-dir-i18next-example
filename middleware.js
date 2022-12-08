@@ -16,8 +16,9 @@ export function middleware(req) {
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))
   if (!lng) lng = fallbackLng
 
-  if (req.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL(`/${lng}`, req.url))
+  // Redirect if lng in path is not supported
+  if (languages.some(loc => req.nextUrl.pathname.startsWith(`/${loc}`))) {
+    return NextResponse.redirect(new URL(`/${lng}${req.nextUrl.pathname}`, req.url))
   }
 
   if (req.headers.has('referer')) {
