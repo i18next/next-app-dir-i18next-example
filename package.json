@@ -6,7 +6,10 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "migrateToLocize": "locize migrate --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=c9805cd1-fd50-4d98-967a-383b39066de8 --path=./app/i18n/locales",
+    "downloadLocales": "locize download --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --ver=latest --clean=true --path=./app/i18n/locales",
+    "syncLocales": "locize sync --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=bd8cb856-d6b3-4c82-a456-862c729a1674 --ver=latest --path=./app/i18n/locales --dry=true"
   },
   "dependencies": {
     "accept-language": "3.0.18",
@@ -18,5 +21,6 @@
     "react-i18next": "12.1.1"
   },
   "devDependencies": {
+    "locize-cli": "7.13.1"
   }
 }
