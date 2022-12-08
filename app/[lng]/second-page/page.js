@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import i18next from '../../i18n'
+import { useTranslation } from '../../i18n'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
 export default async function Page({ params: { lng } }) {
-  const { t } = await i18next(lng, 'second-page')
+  const { t } = await useTranslation(lng, 'second-page')
   return (
     <>
       <main>

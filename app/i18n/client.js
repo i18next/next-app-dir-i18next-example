@@ -11,8 +11,6 @@ i18next
   .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
   .init(getOptions())
 
-export default i18next
-
 export function useTranslation(lng, ns, options) {
   if (i18next.resolvedLanguage !== lng) i18next.changeLanguage(lng)
   return useTranslationOrg(ns, options)
