@@ -10,10 +10,7 @@ export default function Page({ params: { lng } }) {
   return (
     <>
       <main>
-        <Header
-          heading={t('h1')}
-          title={t('title')}
-        />
+        <Header heading={t('h1')} />
         <Link href={`/${lng}`}>
           <button type="button">
             {t('back-to-home')}

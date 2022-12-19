@@ -12,10 +12,7 @@ export default function Page({ params: { lng } }) {
   return (
     <>
       <main>
-        <Header
-          heading={t('h1')}
-          title={t('title')}
-        />
+        <Header heading={t('h1')} />
         <p>{t('counter', { count: counter })}</p>
         <div>
           <button onClick={() => setCounter(Math.max(0, counter - 1))}>-</button>
