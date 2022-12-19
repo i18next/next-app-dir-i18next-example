@@ -20,7 +20,7 @@ export default async function Page({ params: { lng } }) {
         </h2>
         <div style={{ width: '100%' }}>
           <p>
-            <Trans i18nKey="blog.text">
+            <Trans t={t} i18nKey="blog.text">
               Check out the corresponding <a href={t('blog.link')}>blog post</a> describing this example.
             </Trans>
           </p>
