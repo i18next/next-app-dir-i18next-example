@@ -1,6 +1,7 @@
 'use client'
 
 import i18next from 'i18next'
+import { useEffect } from 'react'
 import { initReactI18next, useTranslation as useTranslationOrg } from 'react-i18next'
 import resourcesToBackend from 'i18next-resources-to-backend'
 // import LocizeBackend from 'i18next-locize-backend'
@@ -22,6 +23,8 @@ i18next
   })
 
 export function useTranslation(lng, ns, options) {
-  if (i18next.resolvedLanguage !== lng) i18next.changeLanguage(lng)
+   useEffect(() => {
+    if (i18next.resolvedLanguage !== lng) i18next.changeLanguage(lng)
+  }, [lng])
   return useTranslationOrg(ns, options)
 }
