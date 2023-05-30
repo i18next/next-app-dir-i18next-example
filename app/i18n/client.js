@@ -25,13 +25,14 @@ i18next
 const runsOnServerSide = typeof window === 'undefined'
 
 export function useTranslation(lng, ns, options) {
-  if (runsOnServerSide && i18next.resolvedLanguage !== lng) {
-    i18next.changeLanguage(lng)
+  const { t, i18n, ready } = useTranslationOrg(ns, options)
+  if (runsOnServerSide && i18n.resolvedLanguage !== lng) {
+    i18n.changeLanguage(lng)
   } else {
     useEffect(() => {
-      if (i18next.resolvedLanguage === lng) return
-      i18next.changeLanguage(lng)
-    }, [lng])
+      if (i18n.resolvedLanguage === lng) return
+      i18n.changeLanguage(lng)
+    }, [lng, i18n])
   }
-  return useTranslationOrg(ns, options)
+  return { t, i18n, ready }
 }
