@@ -25,7 +25,8 @@ i18next
 const runsOnServerSide = typeof window === 'undefined'
 
 export function useTranslation(lng, ns, options) {
-  const { t, i18n, ready } = useTranslationOrg(ns, options)
+  const ret = useTranslationOrg(ns, options)
+  const { i18n } = ret
   if (runsOnServerSide && i18n.resolvedLanguage !== lng) {
     i18n.changeLanguage(lng)
   } else {
@@ -35,5 +36,5 @@ export function useTranslation(lng, ns, options) {
       i18n.changeLanguage(lng)
     }, [lng, i18n])
   }
-  return { t, i18n, ready }
+  return ret
 }
