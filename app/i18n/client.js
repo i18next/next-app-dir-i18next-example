@@ -6,7 +6,9 @@ import { initReactI18next, useTranslation as useTranslationOrg } from 'react-i18
 import resourcesToBackend from 'i18next-resources-to-backend'
 // import LocizeBackend from 'i18next-locize-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
-import { getOptions } from './settings'
+import { getOptions, languages } from './settings'
+
+const runsOnServerSide = typeof window === 'undefined'
 
 // on client side the normal singleton is ok
 i18next
@@ -19,10 +21,9 @@ i18next
     lng: undefined, // let detect the language on client side
     detection: {
       order: ['path', 'htmlTag', 'cookie', 'navigator'],
-    }
+    },
+    preload: runsOnServerSide ? languages : []
   })
-
-const runsOnServerSide = typeof window === 'undefined'
 
 export function useTranslation(lng, ns, options) {
   const ret = useTranslationOrg(ns, options)
