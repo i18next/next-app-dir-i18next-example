@@ -13,16 +13,16 @@
   },
   "dependencies": {
     "accept-language": "3.0.18",
-    "i18next": "23.4.6",
+    "i18next": "23.6.0",
     "i18next-browser-languagedetector": "7.1.0",
     "i18next-resources-to-backend": "1.1.4",
-    "next": "13.4.8",
+    "next": "14.0.1",
     "react": "18.2.0",
-    "react-cookie": "6.1.0",
+    "react-cookie": "6.1.1",
     "react-dom": "18.2.0",
-    "react-i18next": "13.2.0"
+    "react-i18next": "13.3.1"
   },
   "devDependencies": {
-    "locize-cli": "7.14.6"
+    "locize-cli": "7.14.11"
   }
 }
