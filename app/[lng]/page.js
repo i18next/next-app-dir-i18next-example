@@ -32,7 +32,7 @@ export default async function Page({ params: { lng } }) {
           <a href={t('blog.link')}>
             <img
               style={{ width: '50%' }}
-              src="https://locize.com/blog/next-13-app-dir-i18n/next-13-app-dir-i18n.jpg"
+              src="https://locize.com/blog/next-app-dir-i18n/next-app-dir-i18n.jpg"
             />
           </a>
         </div>

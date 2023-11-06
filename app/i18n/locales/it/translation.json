@@ -6,6 +6,6 @@
   "welcome": "Benvenuti a Next.js 13/14 <1>con le nuove funzionalità di app directory</1> e i18next",
   "blog": {
     "text": "Scopri il corrispondente <1>articolo</1> che descrivere questo esempio.",
-    "link": "https://locize.com/blog/next-13-app-dir-i18n/"
+    "link": "https://locize.com/blog/next-app-dir-i18n/"
   }
 }
