@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "accept-language": "3.0.18",
-    "i18next": "23.9.0",
+    "i18next": "23.10.0",
     "i18next-browser-languagedetector": "7.2.0",
     "i18next-resources-to-backend": "1.2.0",
     "next": "14.1.0",
     "react": "18.2.0",
-    "react-cookie": "7.0.2",
+    "react-cookie": "7.1.0",
     "react-dom": "18.2.0",
     "react-i18next": "14.0.5"
   },
