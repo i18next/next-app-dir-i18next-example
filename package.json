@@ -5,6 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "dev-turbo": "next dev --turbo",
     "lint": "next lint",
     "start": "next start",
     "migrateToLocize": "locize migrate --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=c9805cd1-fd50-4d98-967a-383b39066de8 --path=./app/i18n/locales",
@@ -13,16 +14,16 @@
   },
   "dependencies": {
     "accept-language": "3.0.18",
-    "i18next": "23.10.0",
-    "i18next-browser-languagedetector": "7.2.0",
-    "i18next-resources-to-backend": "1.2.0",
-    "next": "14.1.0",
-    "react": "18.2.0",
-    "react-cookie": "7.1.0",
-    "react-dom": "18.2.0",
-    "react-i18next": "14.0.5"
+    "i18next": "23.11.5",
+    "i18next-browser-languagedetector": "8.0.0",
+    "i18next-resources-to-backend": "1.2.1",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-cookie": "7.1.4",
+    "react-dom": "18.3.1",
+    "react-i18next": "14.1.2"
   },
   "devDependencies": {
-    "locize-cli": "8.0.0"
+    "locize-cli": "8.0.1"
   }
 }
