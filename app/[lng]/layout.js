@@ -8,7 +8,8 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export async function generateMetadata({ params: { lng } }) {
+export async function generateMetadata({ params }) {
+  let { lng } = await params
   if (languages.indexOf(lng) < 0) lng = fallbackLng
   const { t } = await useTranslation(lng)
   return {
@@ -17,12 +18,11 @@ export async function generateMetadata({ params: { lng } }) {
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: {
-    lng
-  }
+  params
 }) {
+  const { lng } = await params
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />

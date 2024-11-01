@@ -5,7 +5,8 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export async function generateMetadata({ params: { lng } }) {
+export async function generateMetadata({ params }) {
+  let { lng } = await params
   if (languages.indexOf(lng) < 0) lng = fallbackLng
   const { t } = await useTranslation(lng, 'second-page')
   return {

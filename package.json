@@ -13,17 +13,17 @@
     "syncLocales": "locize sync --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=bd8cb856-d6b3-4c82-a456-862c729a1674 --ver=latest --path=./app/i18n/locales --dry=true"
   },
   "dependencies": {
-    "accept-language": "3.0.18",
-    "i18next": "23.11.5",
+    "accept-language": "3.0.20",
+    "i18next": "23.16.4",
     "i18next-browser-languagedetector": "8.0.0",
     "i18next-resources-to-backend": "1.2.1",
-    "next": "14.2.3",
+    "next": "15.0.2",
     "react": "18.3.1",
-    "react-cookie": "7.1.4",
+    "react-cookie": "7.2.2",
     "react-dom": "18.3.1",
-    "react-i18next": "14.1.2"
+    "react-i18next": "15.1.0"
   },
   "devDependencies": {
-    "locize-cli": "8.0.1"
+    "locize-cli": "8.1.1"
   }
 }
