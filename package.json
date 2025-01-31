@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "accept-language": "3.0.20",
-    "i18next": "23.16.4",
-    "i18next-browser-languagedetector": "8.0.0",
+    "i18next": "24.2.2",
+    "i18next-browser-languagedetector": "8.0.2",
     "i18next-resources-to-backend": "1.2.1",
-    "next": "15.0.2",
-    "react": "18.3.1",
+    "next": "15.1.6",
+    "react": "19.0.0",
     "react-cookie": "7.2.2",
-    "react-dom": "18.3.1",
-    "react-i18next": "15.1.0"
+    "react-dom": "19.0.0",
+    "react-i18next": "15.4.0"
   },
   "devDependencies": {
-    "locize-cli": "8.1.1"
+    "locize-cli": "8.4.0"
   }
 }
