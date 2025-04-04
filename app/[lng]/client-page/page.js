@@ -2,14 +2,16 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { useTranslation } from '../../i18n/client'
+// import { useTranslation } from '../../i18n/client'
+import { useT } from '../../i18n/client'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer/client'
 import { useState } from 'react'
 
 export default function Page({ params }) {
   const { lng } = React.use(params)
-  const { t } = useTranslation(lng, 'client-page')
+  // const { t } = useTranslation(lng, 'client-page')
+  const { t } = useT('client-page')
   const [counter, setCounter] = useState(0)
   return (
     <>

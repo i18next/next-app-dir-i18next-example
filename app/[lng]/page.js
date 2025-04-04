@@ -1,14 +1,16 @@
 import Link from 'next/link'
 import { Trans } from 'react-i18next/TransWithoutContext'
 import { languages, fallbackLng } from '../i18n/settings'
-import { useTranslation } from '../i18n'
+// import { useTranslation } from '../i18n'
+import { getT } from '../i18n/server'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 
 export default async function Page({ params }) {
   let { lng } = await params
   if (languages.indexOf(lng) < 0) lng = fallbackLng
-  const { t } = await useTranslation(lng)
+  // const { t } = await useTranslation(lng)
+  const { t } = await getT(lng)
 
   return (
     <>
