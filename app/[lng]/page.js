@@ -25,7 +25,7 @@ export default async function Page() {
           <a href={t('blog.link')}>
             <img
               style={{ width: '50%' }}
-              src="https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67ab23a11128dcf4b9533ed0_next-app-dir-i18n.jpg"
+              src="https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67f268673fcfae53e5d4697c_i18n-next-app-router.jpg"
             />
           </a>
         </div>
