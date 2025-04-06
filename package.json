@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "accept-language": "3.0.20",
-    "cookies-next": "5.1.0",
     "i18next": "24.2.3",
     "i18next-browser-languagedetector": "8.0.4",
     "i18next-resources-to-backend": "1.2.1",
