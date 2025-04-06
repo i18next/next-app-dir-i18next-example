@@ -1,6 +1,6 @@
 # Next.js 13/14/15 app directory feature in combination with i18next
 
-This example shows a basic way to use [i18next](https://www.i18next.com) (and [react-i18next](https://react.i18next.com)) in a [Next.js 13](https://beta.nextjs.org/) app with the new app directory features.
+This example shows a basic way to use [i18next](https://www.i18next.com) (and [react-i18next](https://react.i18next.com)) in a [Next.js](https://nextjs.org/) app with the new app directory features.
 [next-i18next](https://next.i18next.com) is not needed anymore for this setup.
 
 It shows i18next integration on some server side pages and some client side pages.
@@ -11,8 +11,10 @@ There is also an example middleware with language detection and persistence via 
 
 ## There's also a [blog post](https://locize.com/blog/next-app-dir-i18n) describing this with more detail information.
 
-[![](https://locize.com/blog/next-app-dir-i18n/next-app-dir-i18n.jpg)](https://locize.com/blog/next-app-dir-i18n)
+[![](https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67ab23a11128dcf4b9533ed0_next-app-dir-i18n.jpg)](https://locize.com/blog/next-app-dir-i18n)
 
+
+**A simpler approach without passing the t function town in your pages can be found [here](https://github.com/i18next/next-app-dir-i18next-example)!**
 
 
 ### Static Side Generation (SSG)
