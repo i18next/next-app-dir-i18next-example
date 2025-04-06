@@ -1,16 +1,12 @@
-import { languages, fallbackLng } from '../../i18n/settings'
-// import { useTranslation } from '../../i18n'
-import { getT } from '../../i18n/server'
+import { languages } from '../../i18n/settings'
+import { getT } from '../../i18n'
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export async function generateMetadata({ params }) {
-  let { lng } = await params
-  if (languages.indexOf(lng) < 0) lng = fallbackLng
-  // const { t } = await useTranslation(lng, 'second-page')
-  const { t } = await getT(lng, 'second-page')
+export async function generateMetadata() {
+  const { t } = await getT('second-page')
   return {
     title: t('title')
   }

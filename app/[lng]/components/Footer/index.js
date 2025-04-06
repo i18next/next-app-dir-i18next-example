@@ -1,8 +1,7 @@
-// import { useTranslation } from '../../../i18n'
-import { getT } from '../../../i18n/server'
+import { getT } from '../../../i18n'
 import { FooterBase } from './FooterBase'
 
-export const Footer = async ({ lng, path }) => {
-  const { t } = await getT(lng, 'footer')
-  return <FooterBase t={t} lng={lng} path={path} />
+export const Footer = async ({ path }) => {
+  const { t, i18n } = await getT('footer')
+  return <FooterBase t={t} lng={i18n.resolvedLanguage} path={path} />
 }

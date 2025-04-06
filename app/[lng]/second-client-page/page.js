@@ -1,27 +1,29 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
-// import { useTranslation } from '../../i18n/client'
 import { useT } from '../../i18n/client'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer/client'
+import { Link } from '../components/Link/client'
+import { useRouter } from 'next/navigation'
 
-export default function Page({ params }) {
-  const { lng } = React.use(params)
-  // const { t } = useTranslation(lng, 'second-client-page')
-  const { t } = useT('second-client-page')
+export default function Page() {
+  const router = useRouter()
+  const { t, i18n } = useT('second-client-page')
   return (
     <>
       <main>
         <Header heading={t('h1')} />
-        <Link href={`/${lng}`}>
+        <Link href="/">
           <button type="button">
             {t('back-to-home')}
           </button>
         </Link>
+        <button type="button" onClick={() => router.push(`/${i18n.resolvedLanguage}/client-page`)}>
+          {t('to-client-page')}
+        </button>
       </main>
-      <Footer lng={lng} path="/second-client-page" />
+      <Footer path="/second-client-page" />
     </>
   )
 }

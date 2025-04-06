@@ -1,16 +1,11 @@
-import Link from 'next/link'
 import { Trans } from 'react-i18next/TransWithoutContext'
-import { languages, fallbackLng } from '../i18n/settings'
-// import { useTranslation } from '../i18n'
-import { getT } from '../i18n/server'
+import { getT } from '../i18n'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { Link } from './components/Link'
 
-export default async function Page({ params }) {
-  let { lng } = await params
-  if (languages.indexOf(lng) < 0) lng = fallbackLng
-  // const { t } = await useTranslation(lng)
-  const { t } = await getT(lng)
+export default async function Page() {
+  const { t } = await getT()
 
   return (
     <>
@@ -36,15 +31,15 @@ export default async function Page({ params }) {
         </div>
         <hr style={{ marginTop: 20, width: '90%' }} />
         <div>
-          <Link href={`/${lng}/second-page`}>
+          <Link href="/second-page">
             <button type="button">{t('to-second-page')}</button>
           </Link>
-          <Link href={`/${lng}/client-page`}>
+          <Link href="/client-page">
             <button type="button">{t('to-client-page')}</button>
           </Link>
         </div>
       </main>
-      <Footer lng={lng}/>
+      <Footer />
     </>
   )
 }
