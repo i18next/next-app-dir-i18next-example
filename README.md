@@ -14,7 +14,7 @@ There is also an example middleware with language detection and persistence via 
 [![](https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67f268673fcfae53e5d4697c_i18n-next-app-router.jpg)](https://www.locize.com/blog/i18n-next-app-router)
 
 
-### Static Side Generation (SSG)
+### Static Site Generation (SSG)
 
 If you like to have all this hosted on a static server, you can add the `output: 'export'` options and optionally the `trailingSlash: true` option:
 
