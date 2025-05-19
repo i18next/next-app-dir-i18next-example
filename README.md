@@ -9,6 +9,8 @@ There is also an example middleware with language detection and persistence via 
 
 *This example has been created out of [this discussion](https://github.com/i18next/next-i18next/discussions/1993).*
 
+You can build with `git clone -b example https://github.com/i18next/next-app-dir-i18next-example.git && npm i && npm run build`, and then serve it with `python -m http.server`, etc. to experience SSG!
+
 ## There's also a [blog post](https://www.locize.com/blog/i18n-next-app-router) describing this with more detail information.
 
 [![](https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67f268673fcfae53e5d4697c_i18n-next-app-router.jpg)](https://www.locize.com/blog/i18n-next-app-router)
