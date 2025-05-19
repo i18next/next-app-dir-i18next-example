@@ -4,8 +4,9 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Link } from './components/Link'
 
-export default async function Page() {
-  const { t } = await getT()
+export default async function Page({ params }) {
+  const { lng } = await params
+  const { t } = await getT(lng, 'second-page')
 
   return (
     <>
