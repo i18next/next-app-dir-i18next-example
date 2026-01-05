@@ -11,7 +11,7 @@ There is also an example middleware with language detection and persistence via 
 
 ## There's also a [blog post](https://www.locize.com/blog/i18n-next-app-router) describing this with more detail information.
 
-[![](https://cdn.prod.website-files.com/67a323e323a50df7f24f0a94/67f268673fcfae53e5d4697c_i18n-next-app-router.jpg)](https://www.locize.com/blog/i18n-next-app-router)
+[![](https://www.locize.com/img/blog/i18n-next-app-router/i18n-next-app-router.jpg)](https://www.locize.com/blog/i18n-next-app-router)
 
 
 ### Static Site Generation (SSG)
