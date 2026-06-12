@@ -1,7 +1,9 @@
-# Next.js app router feature in combination with i18next
+# Next.js App Router in combination with i18next (direct usage, without a wrapper)
 
-This example shows a basic way to use [i18next](https://www.i18next.com) (and [react-i18next](https://react.i18next.com)) in a [Next.js](https://nextjs.org/) app with the new app router features.
-[next-i18next](https://next.i18next.com) is not needed anymore for this setup.
+This example shows how to use [i18next](https://www.i18next.com) and [react-i18next](https://react.i18next.com) **directly** in a [Next.js](https://nextjs.org/) App Router app: you own the Next.js wiring (middleware, server/client split, resource loading) yourself, with no additional dependency.
+
+> [!TIP]
+> Looking for the batteries-included path instead? Since v16, [next-i18next](https://github.com/i18next/next-i18next) supports the App Router out of the box: `getT()` for Server Components, `useT()` for Client Components and `createProxy()` for language detection and routing, with runnable [examples](https://github.com/i18next/next-i18next/tree/master/examples). It is a thin layer on top of the same i18next + react-i18next shown here (see the [next-i18next v16 announcement](https://www.locize.com/blog/next-i18next-v16?utm_source=next_app_dir_i18next_example_readme&utm_medium=github&utm_campaign=readme) for the background). This example remains the right starting point if you prefer full control over your setup.
 
 It shows i18next integration on some server side pages and some client side pages.
 
