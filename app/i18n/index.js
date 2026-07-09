@@ -1,10 +1,6 @@
 import i18next from  './i18next'
-import { headerName } from './settings'
-import { headers } from 'next/headers'
 
-export async function getT(ns, options) {
-  const headerList = await headers()
-  const lng = headerList.get(headerName)
+export async function getT(lng, ns, options) {
   if (lng && i18next.resolvedLanguage !== lng) {
     await i18next.changeLanguage(lng)
   }

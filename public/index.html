@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>redirect</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.0.2/i18nextBrowserLanguageDetector.min.js"></script>
+    <!-- <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script> -->
+    <script>
+      var lngDetector = new window.i18nextBrowserLanguageDetector()
+      var lng = lngDetector.detect()
+      if (lng.indexOf('it') === 0) window.location.href = '/it/'
+      else if (lng.indexOf('de') === 0) window.location.href = '/de/'
+      else window.location.href = '/en/'
+    </script>
+  </body>
+</html>
